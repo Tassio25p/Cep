@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>Consulta de CEP</h1>
+            <form id="cepForm">
+                <div class="input-group">
+                    <label for="cep">Digite o CEP</label>
+                    <input type="text" id="cep" name="cep" placeholder="Ex: 01001000" maxlength="8" required>
+                </div>
+                <div class="btn-group">
+                    <button type="submit">Pesquisar</button>
+                    <button type="button" id="limparBtn" class="limpar">Limpar</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="resultado">
+            <h2>Resultado</h2>
+            <div id="dados"></div>
+        </div>
+    </div>
+
+    <!-- JS separado -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
