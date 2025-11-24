@@ -95,10 +95,13 @@ button:hover {
     margin-top: 10px;
     color: #050505;
 }
-
 .btn-group {
     display: flex;
-    gap: 10px;
+    flex-direction: column; /* empilha os botões verticalmente */
+    gap: 15px; /* espaço entre os botões */
+    justify-content: center; /* centraliza verticalmente se houver altura */
+    align-items: center; /* centraliza horizontalmente */
+    margin-top: 20px;
 }
 
 button.limpar {
@@ -107,4 +110,31 @@ button.limpar {
 
 button.limpar:hover {
     background-color: #5a6268;
+}
+
+button.menu-btn {
+    background-color: #005ec2;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* espaço entre ícone e texto */
+}
+
+button.menu-btn:hover {
+    background-color: #0071e3;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+button.menu-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
 }
